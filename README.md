@@ -1,4 +1,4 @@
-# FRock, Paper, Scissors!
+# Rock, Paper, Scissors!
 The rock, paper, scissors project from the odin project! (https://www.theodinproject.com/)
 There will be a preview eventually!
 
