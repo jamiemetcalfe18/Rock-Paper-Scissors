@@ -1,12 +1,19 @@
-/* game logic function */
-function computerPlay() {
-  let comptuerChoice = Math.floor(Math.random() * 3);
+/* prompt for user input and storing it in a var */
 
-   if (computerChoice == 0)
+function playerPlay() {
+  let playerSelection = prompt("Please choose Rock, Paper, or Scissors!");
+  return playerSelection.toLowerCase();
+}
+
+/* game logic function */
+function computerSelection() {
+  let comptuerSelection = Math.floor(Math.random() * 3);
+
+   if (computerSelection == 0)
      {
       return "rock";
      }
-   else if (computerChoice == 1)
+   else if (computerSelection == 1)
      {
       return "paper";
      }
@@ -16,48 +23,33 @@ function computerPlay() {
    }
 }
 
-/* prompt for user input and storing it in a var */
-var userChoice = prompt("Please choose Rock, Paper, or Scissors!");
-
-function userChoice() {
-  if (rock) {
-    if (computerChoice = rock) {
+/* out put decision tree */
+function playRound(playerSelection, computerSelection) {
+  if (playerSelection == computerSelection) {
       alert("Tie!");
     }
-      
-    else if (computerChoice = paper) {
+  else if (rock) {
+   if (computerSelection = paper) {
       alert("Lose!");
     }
-      
-    else (computerChoice = scissors) 
+    else (computerSelection = scissors) 
       alert("Win!");
-    }
-    
-  else if (paper) {
-    if (computerPlay = paper) {
-      alert("Tie!");
-    }
-      
-    else if (rock) {
-      alert("Win!");
-    }
-      
-    else (scissors) 
-      alert("Lose!");
-
   }
-    
-  else (scissors) 
-    
-    if (computerPlay = rock) {
-      alert("Lose!");
-    }
-
-    else if (computerPlay = paper) {
+  else if (paper) {
+    if (computerSelection = rock) {
       alert("Win!");
     }
-
-    else (computerPlay= scissors) 
-      alert("Tie!");
-  
+      
+    else (computerSelection = scissors) 
+      alert("Lose!");
+  }
+  else if (scissors){
+    if (computerSelection = rock) {
+      alert("Lose!");
+    }
+    else (computerSelection = paper) 
+      alert("Win!");
+    }
+  else
+    alert("null");
 }
