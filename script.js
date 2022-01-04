@@ -1,5 +1,9 @@
 /* prompt for user input and storing it in a var */
 
+playerPlay()
+computerSelection()
+playRound()
+
 function playerPlay() {
   let playerSelection = prompt("Please choose Rock, Paper, or Scissors!");
   return playerSelection.toLowerCase();
@@ -7,13 +11,13 @@ function playerPlay() {
 
 /* game logic function */
 function computerSelection() {
-  let comptuerSelection = Math.floor(Math.random() * 3);
+  let comptuerSelection = Math.floor(Math.random() * 3)+1;
 
-   if (computerSelection == 0)
+   if (computerSelection == 1)
      {
       return "rock";
      }
-   else if (computerSelection == 1)
+   else if (computerSelection == 2)
      {
       return "paper";
      }
