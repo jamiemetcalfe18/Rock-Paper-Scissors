@@ -1,8 +1,8 @@
-/* prompt for user input and storing it in a var */
-
 playerPlay()
 computerSelection()
 playRound()
+
+/* prompt for user input and storing it in a var */
 
 function playerPlay() {
   let playerSelection = prompt("Please choose Rock, Paper, or Scissors!");
