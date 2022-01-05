@@ -1,8 +1,8 @@
-/* prompt for user input and storing it in a var */
+playerPlay();
+computerSelection();
+playRound();
 
-playerPlay()
-computerSelection()
-playRound()
+/* prompt for user input and storing it in a var */
 
 function playerPlay() {
   let playerSelection = prompt("Please choose Rock, Paper, or Scissors!");
@@ -11,13 +11,13 @@ function playerPlay() {
 
 /* game logic function */
 function computerSelection() {
-  let comptuerSelection = Math.floor(Math.random() * 3)+1;
+  let computerSelection = Math.floor(Math.random() * 3);
 
-   if (computerSelection == 1)
+   if (computerSelection == 0)
      {
       return "rock";
      }
-   else if (computerSelection == 2)
+   else if (computerSelection == 1)
      {
       return "paper";
      }
@@ -27,31 +27,32 @@ function computerSelection() {
    }
 }
 
+
 /* out put decision tree */
-function playRound(playerSelection, computerSelection) {
-  if (playerSelection == computerSelection) {
+function playRound(computerSelection, playerSelection) {
+    if (playerSelection == computerSelection) {
       alert("Tie!");
     }
-  else if (rock) {
-   if (computerSelection = paper) {
+  else if (playerSelection == "rock") {
+   if (computerSelection == "paper") {
       alert("Lose!");
-    }
-    else (computerSelection = scissors) 
+    } 
+   else (computerSelection == "scissors") 
       alert("Win!");
   }
-  else if (paper) {
-    if (computerSelection = rock) {
+  else if (playerSelection == "paper") {
+    if (computerSelection == "rock") {
       alert("Win!");
     }
       
-    else (computerSelection = scissors) 
+    else (computerSelection == "scissors") 
       alert("Lose!");
   }
-  else if (scissors){
-    if (computerSelection = rock) {
+  else if (playerSelection == "scissors"){
+    if (computerSelection == "rock"){
       alert("Lose!");
     }
-    else (computerSelection = paper) 
+    else (computerSelection == "paper") 
       alert("Win!");
     }
   else
