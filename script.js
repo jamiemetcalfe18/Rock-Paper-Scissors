@@ -1,60 +1,38 @@
-playerPlay();
-computerSelection();
-playRound();
+let userChoice= prompt("Do you choose rock, paper, or scissors?");
 
-/* prompt for user input and storing it in a var */
+let computerChoice= Math.random();
 
-function playerPlay() {
-  let playerSelection = prompt("Please choose Rock, Paper, or Scissors!");
-  return playerSelection.toLowerCase();
+console.log(computerChoice);
+
+if(computerChoice<.33){
+  computerChoice="rock";
 }
-
-/* game logic function */
-function computerSelection() {
-  let computerSelection = Math.floor(Math.random() * 3);
-
-   if (computerSelection == 0)
-     {
-      return "rock";
-     }
-   else if (computerSelection == 1)
-     {
-      return "paper";
-     }
-   else 
-   {
-   return "scissors";
-   }
+else if(computerChoice>.33 && computerChoice<.66){
+  computerChoice="paper";
 }
+else {
+  computerChoice="scissors";
+} console.log(computerChoice);
 
-
-/* out put decision tree */
-function playRound(computerSelection, playerSelection) {
-    if (playerSelection == computerSelection) {
-      alert("Tie!");
-    }
-  else if (playerSelection == "rock") {
-   if (computerSelection == "paper") {
-      alert("Lose!");
-    } 
-   else (computerSelection == "scissors") 
-      alert("Win!");
+let compare = function(choice1, choice2){
+  if(choice1===choice2){
+    return "The result is a tie!";
   }
-  else if (playerSelection == "paper") {
-    if (computerSelection == "rock") {
-      alert("Win!");
+  else if(choice1 === "rock"){
+    if(choice2==="scissors") {
+      return "Rock Wins!" 
     }
-      
-    else (computerSelection == "scissors") 
-      alert("Lose!");
+    else 
+        return "Paper wins!"
   }
-  else if (playerSelection == "scissors"){
-    if (computerSelection == "rock"){
-      alert("Lose!");
+  else if(choice1 === "paper"){
+    if(choice2==="rock") 
+  {
+      return "paper Wins!" 
+  }
+    else 
+        return "Paper loses!"
     }
-    else (computerSelection == "paper") 
-      alert("Win!");
-    }
-  else
-    alert("null");
-}
+  }
+
+console.log(compare(userChoice,computerChoice));
