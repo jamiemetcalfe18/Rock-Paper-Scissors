@@ -1,9 +1,6 @@
 let userChoice= prompt("Do you choose rock, paper, or scissors?");
 
 let computerChoice= Math.random();
-
-console.log(computerChoice);
-
 if(computerChoice<.33){
   computerChoice="rock";
 }
