@@ -13,12 +13,33 @@ h1 {
   border: 5px solid orange;
 }
 
+.info {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: darkorange;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
 button {
-  max-height: 50px;
-  max-width: 50px;
+  max-height: 300px;
+  max-width: 300px;
+  border: 0;
+  padding: 0;
 }
 
 img {
-  max-height: 50px;
-  max-width: 50px;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: darkorange;
 }

@@ -7,8 +7,8 @@ There are two branches, main has css and dom manipulation. Whereas basic-js cont
 To get a feel for javascript and to learn how to manipulate the DOM.
 
 ## What I Learned
-Clean code, scope, calling fu
+Clean code, scope, cnctions, basic dom manipulation!alling fu
 
 Icons thanks too nightwolfdezines on vecteezy!
-(https://www.vecteezy.com/vector-art/693097-rock-paper-scissors-flat-icons>)nctions.
+(https://www.vecteezy.com/vector-art/693097-rock-paper))nctions.
 
