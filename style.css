@@ -23,13 +23,14 @@ h1 {
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  gap: 1in;
 }
 
 button {
   max-height: 300px;
   max-width: 300px;
-  border: 0;
+  border: 1in;
   padding: 0;
 }
 
@@ -42,4 +43,25 @@ footer {
   text-align: center;
   font-family: 'Oswald', sans-serif;
   color: darkorange;
+}
+
+/* under the icons */
+
+#result, #winner, #score {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: darkorange;
+}
+
+#try-again {
+  font-family: 'Oswald', sans-serif;
+  color: darkorange;
+  padding:5px;
+  display: block;
+  margin: 10px auto 0;
+  border: 2px solid darkorange;
+}
+
+#try-again:hover {
+  color: orangered;
 }
