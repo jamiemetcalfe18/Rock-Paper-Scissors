@@ -6,7 +6,7 @@ There are two branches, main has css and dom manipulation. Whereas basic-js cont
 To get a feel for javascript and to learn how to manipulate the DOM. This is the first game I've programmed. I found it quite challenging as this is the first project I've coded from scratch in js.
 
 ## What I Learned
-Clean code, scope, cnctions, basic dom manipulation, calling functions, design, and google-fu!
+Clean code, scope, basic dom manipulation, calling functions, design, and google-fu!
 
 Icons thanks too nightwolfdezines on vecteezy!
 (https://www.vecteezy.com/vector-art/693097-rock-paper))nctions.
